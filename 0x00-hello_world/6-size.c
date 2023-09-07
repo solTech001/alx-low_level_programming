@@ -1,19 +1,14 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
- *main - entry point
- *return: alway 1 (sucess)
+ * main- Entry point of the program.
+ * Return: It returns a value of zero, unless an error occurs.
  */
-int main() {
-    int intype;
-    float floatType;
-    double doubleType;
-    char charType;
-
-    // sizeof evaluates the size of a variable
-    printf("Size of int: %zu bytes\n", sizeof(intype));
-    printf("Size of float: %zu bytes\n", sizeof(floatType));
-    printf("Size of double: %zu bytes\n", sizeof(doubleType));
-    printf("Size of char: %zu byte\n", sizeof(charType));
-    
-    return 0;
+int main(void)
+{
+	printf("Size of a char: %ld byte(s)\n", sizeof(char));
+	printf("Size of an int: %ld byte(s)\n", sizeof(int));
+	printf("Size of a long int: %ld byte(s)\n", sizeof(long int));
+	printf("Size of a long long int: %ld byte(s)\n", sizeof(long long int));
+	printf("Size of a float: %ld byte(s)\n", sizeof(float));
+	return (0);
 }
