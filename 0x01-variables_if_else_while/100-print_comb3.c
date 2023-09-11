@@ -3,18 +3,24 @@
  * main - main block here
  * Description - Numbers must be separated by ,, followed by a space
  */
-int main(void);
+int main(void)
 {
-int x;
-for(x = 0; x < 10; x++);
-{
-putchar(x + '0');
-if(x < 9)
-{
-putchar(',');
-putchar(' ');
-}
-}
-putchar('\n');
-return (0);
+    int i, j;
+
+    for (i = 0; i <= 9; i++)
+    {
+        for (j = i + 1; j <= 9; j++)
+        {
+            putchar(i + '0');
+            putchar(j + '0');
+
+            if (i < 8 || j < 9)
+            {
+            putchar(',');
+            putchar(' ');
+            }
+        }
+    }
+    putchar('\n');
+    return (0);
 }
