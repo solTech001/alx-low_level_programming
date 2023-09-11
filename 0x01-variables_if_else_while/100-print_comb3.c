@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
  * main - main block here
+ * * main - Entry point
+ * @parameter: i and j is an intergal 
  * Description - Numbers must be separated by ,, followed by a space
  * return - 0
  */
